@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, serif;
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Ink & paper */
+  --color-ink: #26211b;
+  --color-paper: #f2ecdd;
+  --color-paper-raised: #fbf8ef;
+
+  /* Banig-weave accents */
+  --color-maroon: #8c2f39;
+  --color-maroon-dark: #6e2029;
+  --color-gold: #c08a2e;
+  --color-forest: #2f5233;
+  --color-slate: #5b6b6f;
+  --color-line: #ddd3bc;
+
+  /* Status */
+  --color-danger: #a3342a;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+/* A thin woven-diamond divider, standing in for the banig mat pattern
+   this whole palette is drawn from. Used sparingly, as a section break. */
+.woven-divider {
+  height: 7px;
+  border-radius: 999px;
+  background-image:
+    repeating-linear-gradient(45deg, var(--color-gold) 0, var(--color-gold) 5px, transparent 5px, transparent 10px),
+    repeating-linear-gradient(-45deg, var(--color-maroon) 0, var(--color-maroon) 5px, transparent 5px, transparent 10px);
+  background-blend-mode: multiply;
+  opacity: 0.55;
+}

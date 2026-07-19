@@ -1,0 +1,41 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js build output
+/.next/
+/out/
+/build
+
+# Environment variables — never commit real secrets
+.env
+.env.local
+.env.*.local
+
+# Rust / Soroban contract build artifacts
+/contracts/**/target/
+**/*.rs.bk
+
+# Testing
+/coverage
+
+# Misc OS / editor files
+.DS_Store
+Thumbs.db
+*.pem
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
